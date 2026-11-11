@@ -22,7 +22,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 30px;
+  scroll-padding-top: 32px;
 }
 body {
   margin: 0;
@@ -64,7 +64,7 @@ button:disabled {
   gap: 10px;
   align-items: center;
   font-size: 30px;
-  font-weight: 750;
+  font-weight: 600;
   letter-spacing: -1px;
 }
 .brand svg {
@@ -74,7 +74,7 @@ button:disabled {
 .nav nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 32px;
   font-size: 14px;
 }
 .nav nav a:hover,
@@ -95,7 +95,7 @@ footer a:hover {
   z-index: 10;
 }
 .skip:focus {
-  top: 10px;
+  top: 12px;
 }
 h1,
 h2,
@@ -107,8 +107,8 @@ h1 {
   font-size: clamp(48px, 5.8vw, 74px);
   line-height: 1.08;
   letter-spacing: -2.5px;
-  font-weight: 650;
-  margin-block: 22px 26px;
+  font-weight: 600;
+  margin-block: 24px 24px;
 }
 h2 {
   font-size: 28px;
@@ -123,9 +123,9 @@ h3 {
 .hero {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-  gap: 65px;
+  gap: 64px;
   align-items: center;
-  padding-block: 65px 75px;
+  padding-block: 64px 72px;
 }
 .eyebrow {
   font-size: 13px;
@@ -149,12 +149,12 @@ h3 {
   font-size: 14px;
   color: var(--mint);
   border-bottom: 1px solid #91e0c755;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 .hero-art {
   border-top: 1px solid var(--line);
-  padding-top: 18px;
-  scroll-margin-top: 30px;
+  padding-top: 20px;
+  scroll-margin-top: 32px;
   min-width: 0;
 }
 .chart-top,
@@ -166,16 +166,17 @@ h3 {
   color: var(--muted);
 }
 .chart-bottom {
-  margin: 24px 0 18px;
-  font-size: 11px;
+  flex-wrap: wrap;
+  margin: 24px 0 20px;
+  font-size: 12px;
 }
 .demo {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 .seas {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 22px;
+  gap: 24px;
 }
 .sea-label {
   font-size: 12px;
@@ -190,7 +191,7 @@ h3 {
 .board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 4px;
   color: var(--mint);
 }
 .board.amber {
@@ -199,7 +200,7 @@ h3 {
 .cell {
   aspect-ratio: 1;
   background: var(--panel);
-  border-radius: 7px;
+  border-radius: 8px;
   display: grid;
   place-items: center;
   position: relative;
@@ -236,18 +237,19 @@ h3 {
   font-size: 13px;
   line-height: 1.6;
   color: var(--muted);
-  min-height: 42px;
-  margin: 22px 0 12px;
+  min-height: 44px;
+  margin: 24px 0 12px;
 }
 .demo-controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: space-between;
   align-items: center;
 }
 .directions {
   display: flex;
-  gap: 7px;
+  gap: 8px;
 }
 .directions button {
   width: 44px;
@@ -255,7 +257,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   color: var(--text);
-  border-radius: 7px;
+  border-radius: 8px;
   font-size: 20px;
 }
 .directions button:hover:not(:disabled) {
@@ -263,6 +265,7 @@ h3 {
   color: var(--mint);
 }
 .text-button {
+  min-height: 44px;
   background: transparent;
   border: 0;
   color: var(--muted);
@@ -273,7 +276,7 @@ h3 {
   color: var(--text);
 }
 .demo-note {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.6;
   color: var(--muted);
   margin: 0;
@@ -281,7 +284,7 @@ h3 {
 .how {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-  gap: 65px;
+  gap: 64px;
   border-top: 1px solid var(--line);
   padding-block: 48px;
 }
@@ -301,7 +304,7 @@ h3 {
 .wake-layout {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 65px;
+  gap: 64px;
   align-items: center;
   padding-block: 48px;
 }
@@ -322,7 +325,7 @@ h3 {
 .modes {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-  gap: 65px;
+  gap: 64px;
   padding-block: 64px;
 }
 .mode-list {
@@ -341,7 +344,7 @@ h3 {
 .mode-list dt {
   font-size: 18px;
   color: var(--text);
-  font-weight: 550;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 .mode-list dd {
@@ -361,7 +364,7 @@ h3 {
 }
 .closing h2 {
   font-size: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .closing p {
   font-size: 15px;
@@ -373,7 +376,7 @@ h3 {
   font-size: 13px;
 }
 footer {
-  padding-bottom: 35px;
+  padding-bottom: 36px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -382,7 +385,7 @@ footer {
 footer .footer-brand {
   font-size: 25px;
   letter-spacing: -1px;
-  font-weight: 650;
+  font-weight: 600;
 }
 footer > div {
   display: flex;
@@ -390,18 +393,18 @@ footer > div {
   font-size: 12px;
 }
 footer small {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 .document {
   max-width: 760px;
-  padding-block: 50px 90px;
+  padding-block: 48px 88px;
   min-height: 65vh;
 }
 .document h1 {
   font-size: 44px;
   letter-spacing: -1.5px;
-  margin-top: 35px;
+  margin-top: 36px;
 }
 .document h2 {
   font-size: 25px;
@@ -423,20 +426,20 @@ footer small {
 }
 .button {
   display: inline-block;
-  padding: 14px 20px;
+  padding: 16px 20px;
   background: var(--mint);
   color: var(--night);
-  border-radius: 6px;
+  border-radius: 8px;
 }
 @media (max-width: 900px) {
   .wrap {
     width: calc(100% - 40px);
   }
   .nav {
-    height: 85px;
+    height: 84px;
   }
   .nav nav {
-    gap: 18px;
+    gap: 16px;
     font-size: 12px;
   }
   .nav nav > a:first-child {
@@ -447,7 +450,7 @@ footer small {
   }
   .hero {
     grid-template-columns: 1fr;
-    padding-block: 30px 45px;
+    padding-block: 32px 48px;
     gap: 36px;
   }
   .hero-copy {
@@ -487,15 +490,8 @@ footer small {
   }
 }
 @media (max-width: 480px) {
-  .chart-top,
-  .sea-label {
-    font-size: 11px;
-  }
   .seas {
-    gap: 14px;
-  }
-  .chart-bottom {
-    font-size: 10px;
+    gap: 16px;
   }
   .closing {
     display: block;
@@ -509,10 +505,10 @@ footer small {
     font-size: 23px;
   }
   footer {
-    gap: 22px;
+    gap: 24px;
   }
   footer > div {
-    gap: 18px;
+    gap: 16px;
   }
   footer small {
     width: 100%;
