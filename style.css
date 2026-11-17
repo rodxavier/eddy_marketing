@@ -416,20 +416,57 @@ h3 {
   max-width: 650px;
 }
 .store-status {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 620px;
+  margin-block: 24px;
 }
-.store-status > span {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 12px 18px;
-  color: var(--text);
+.store-status-card {
+  --store-accent: var(--mint);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #91e0c744;
+  border-radius: 14px;
+  background: var(--panel);
+}
+.store-status-android {
+  --store-accent: var(--gold);
+  border-color: #ffba6b44;
+}
+.store-device-icon {
+  flex: 0 0 40px;
+  color: var(--store-accent);
+}
+.store-device-icon svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.store-status-copy {
+  display: grid;
+  gap: 5px;
 }
 .store-status-note {
-  display: block;
+  color: var(--store-accent);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.store-status-copy strong {
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+.store-devices {
   color: var(--muted);
   font-size: 12px;
+  line-height: 1.5;
 }
 .closing .closing-note {
   font-size: 13px;
@@ -549,6 +586,11 @@ footer small {
   }
   footer {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 640px) {
+  .store-status {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 480px) {
