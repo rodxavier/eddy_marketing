@@ -56,7 +56,7 @@
     <main id="main" class="document wrap">
       <a class="back" href="/">← Back to Eddy</a>
       <h1>Eddy privacy policy</h1>
-      <p>Effective November 17, 2026.</p>
+      <p>Effective November 18, 2026.</p>
       <h2>Puzzles and local progress</h2>
       <p>
         Eddy generates puzzles on your device. Puzzle seeds, moves, records, hint unlocks, daily
@@ -98,20 +98,26 @@
         block play.
       </p>
       <p>
-        Google's SDK may process IP addresses (including approximate location derived from them),
-        device identifiers, advertising interactions, and diagnostics for advertising, measurement,
-        fraud prevention, and operation of its services. On iOS, Eddy does not request Apple's
-        tracking permission, so the Apple advertising identifier is unavailable. On Android,
-        Google's SDK may use the Android advertising ID and app set ID. Other SDK data processing
-        can still occur. See
+        Starting with version 2026.11.1 build 6, Eddy applies child-directed ad treatment and a
+        general-audience ad content limit to every player. We do not collect your age or date of
+        birth. Ad requests are non-personalized. The Android app removes advertising-ID, ad topics,
+        and attribution permissions; the iOS app does not request tracking permission and disables
+        the advertising SDK's same-app key. Earlier Android builds may use the advertising ID.
+      </p>
+      <p>
+        Google's SDK may still process IP addresses (including approximate location derived from
+        them), app set identifiers, advertising interactions, and diagnostics for ad delivery,
+        measurement, fraud prevention, and operation of its services. See
         <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
           >Google’s Mobile Ads data disclosure</a
         >.
       </p>
       <p>
-        Where required, a consent message appears before ads are requested. You can revisit
-        available choices through Settings → Ad privacy choices. Choices and regional requirements
-        can affect which ads are served. Read
+        Build 6 and later also send the under-age-of-consent setting to Google's User Messaging
+        Platform for every player, so it may not display a consent form. Ads are requested only when
+        that platform allows them. When privacy choices are available, you can revisit them through
+        Settings → Ad privacy choices. Choices and regional requirements can affect which ads are
+        served. Read
         <a href="https://policies.google.com/technologies/ads">Google's advertising policy</a> and
         <a href="https://policies.google.com/privacy">Google's privacy policy</a>.
       </p>
