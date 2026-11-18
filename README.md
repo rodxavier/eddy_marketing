@@ -11,7 +11,7 @@ Run `python3 -m http.server 8080` here, then open http://localhost:8080. Root-re
 Keep HTML, CSS, and JavaScript readable in source control. From this directory, run:
 
 ```sh
-bunx prettier@3.8.3 --write index.html privacy/index.html support/index.html 404.html style.css demo.js .prettierrc.json
+bunx prettier@3.8.3 --write index.html privacy/index.html support/index.html terms/index.html 404.html style.css demo.js .prettierrc.json
 ```
 
 Use `--check` instead of `--write` to verify formatting. The sitemap uses two-space XML indentation. Formatting requires Bun and an initial package download; the site itself still has no build step.
@@ -27,10 +27,10 @@ Cloudflare DNS: `eddy` CNAME `rodxavier.github.io`, DNS only. Optional `www.eddy
 - Verify the site in Google Search Console, submit `/sitemap.xml`, and inspect the homepage for indexing.
 - Keep page metadata and homepage structured data aligned with visible content; add the real App Store and Google Play URLs and availability details when released.
 - Replace the Coming soon copy with the actual App Store and Google Play links at launch; do not invent store links or announce availability before release.
-- Verify /privacy/, /support/, /app-ads.txt and HTTPS after deployment.
+- Verify /privacy/, /support/, /terms/, /app-ads.txt and HTTPS after deployment.
 - Use https://eddy.bondoc.cloud as the App Store marketing URL and the corresponding support/privacy paths.
 - Verify AdMob can discover app-ads.txt from the App Store developer website; subdomain crawling may require additional setup on bondoc.cloud.
-- Keep the support and privacy text aligned with the app when behavior changes.
+- Keep the support, privacy, and terms text aligned with the app when behavior changes.
 
 The social image is a branded website preview.
 
