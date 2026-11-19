@@ -293,12 +293,19 @@ h3 {
 }
 .screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   align-items: start;
 }
 .screenshot-grid figure {
   margin: 0;
+}
+.screenshot-grid a {
+  display: block;
+  border-radius: 16px;
+}
+.screenshot-grid a:hover img {
+  border-color: var(--mint);
 }
 .screenshot-grid img {
   display: block;
@@ -309,7 +316,7 @@ h3 {
 }
 .screenshot-grid figcaption {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 .screenshot-grid figcaption strong,
@@ -322,7 +329,7 @@ h3 {
 .screenshot-grid figcaption span {
   margin-top: 4px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.875rem;
 }
 .how {
   display: grid;
@@ -528,9 +535,6 @@ footer small {
   border-radius: 8px;
 }
 @media (max-width: 900px) {
-  .screenshot-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .wrap {
     width: calc(100% - 40px);
   }
@@ -589,17 +593,15 @@ footer small {
   }
 }
 @media (max-width: 640px) {
+  .screenshot-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
   .store-status {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 480px) {
-  .screenshot-grid {
-    grid-template-columns: 1fr;
-    max-width: 320px;
-    margin-inline: auto;
-    gap: 32px;
-  }
   .seas {
     gap: 16px;
   }
