@@ -27,7 +27,7 @@
         }
       board.setAttribute(
         'aria-label',
-        `${sea ? 'Amber' : 'Jade'} sea. Boat row ${position[1] + 1}, column ${position[0] + 1}. Harbour row 1, column ${dock[0] + 1}. ${lights[sea] ? 'Light collected.' : `Light row 4, column ${light[0] + 1}.`}`,
+        `${sea ? 'Mirror' : 'Natural'} sea. Boat row ${position[1] + 1}, column ${position[0] + 1}. Harbour row 1, column ${dock[0] + 1}. ${lights[sea] ? 'Light collected.' : `Light row 4, column ${light[0] + 1}.`}`,
       );
     });
     controls.forEach((button) => (button.disabled = won()));
