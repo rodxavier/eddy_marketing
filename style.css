@@ -293,7 +293,7 @@ h3 {
 }
 .screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   align-items: start;
 }
@@ -311,6 +311,9 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #081520;
   border: 1px solid var(--line);
   border-radius: 16px;
 }
@@ -535,6 +538,9 @@ footer small {
   border-radius: 8px;
 }
 @media (max-width: 900px) {
+  .screenshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .wrap {
     width: calc(100% - 40px);
   }
@@ -595,6 +601,8 @@ footer small {
 @media (max-width: 640px) {
   .screenshot-grid {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-inline: auto;
     gap: 32px;
   }
   .store-status {
