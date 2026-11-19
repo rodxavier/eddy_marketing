@@ -25,8 +25,8 @@ Cloudflare DNS: `eddy` CNAME `rodxavier.github.io`, DNS only. Optional `www.eddy
 ## Launch checklist
 
 - Verify the site in Google Search Console, submit `/sitemap.xml`, and inspect the homepage for indexing.
-- Keep page metadata and homepage structured data aligned with visible content; add the real App Store and Google Play URLs and availability details when released.
-- Replace the Coming soon copy with the actual App Store and Google Play links at launch; do not invent store links or announce availability before release.
+- Keep page metadata and homepage structured data aligned with visible content; keep the App Store link current and add Google Play availability when released.
+- Replace the Android Coming soon copy with the actual Google Play link at launch; do not invent store links or announce availability before release.
 - Verify /privacy/, /support/, /terms/, /app-ads.txt and HTTPS after deployment.
 - Use https://eddy.bondoc.cloud as the App Store marketing URL and the corresponding support/privacy paths.
 - Verify AdMob can discover app-ads.txt from the App Store developer website; subdomain crawling may require additional setup on bondoc.cloud.
@@ -38,8 +38,8 @@ The social image is a branded website preview.
 
 Each page has a distinct title, description, canonical URL, and Open Graph metadata. Public pages include matching Twitter cards; the shared image is 1200×630. Homepage SoftwareApplication data describes iOS, Android, and supported features. It does not fabricate store availability, ratings, reviews, or download links. The 404 page is noindex; robots.txt permits crawling and points to the sitemap.
 
-The Google Play website and privacy URLs are `https://eddy.bondoc.cloud/` and `https://eddy.bondoc.cloud/privacy/`; support email is `rod@bondoc.cloud`. Add the actual Google Play and App Store links only at launch. Search Console verification and indexing depend on the owner's account; metadata alone does not guarantee search placement or app rich results.
+The Google Play website and privacy URLs are `https://eddy.bondoc.cloud/` and `https://eddy.bondoc.cloud/privacy/`; support email is `rod@bondoc.cloud`. The iOS download link is https://apps.apple.com/app/id6832378080. Add the Google Play download link at launch. Search Console verification and indexing depend on the owner's account; metadata alone does not guarantee search placement or app rich results.
 
 References: [Google Play listing guidance](https://support.google.com/googleplay/android-developer/answer/13393723), [Google software application structured data](https://developers.google.com/search/docs/appearance/structured-data/software-app).
 
-Use official [App Store pre-order](https://developer.apple.com/app-store/pre-orders/) and [Google Play pre-registration](https://play.google.com/console/about/pre-registration/) badges only after those pages are live. Current store availability labels are plain text.
+The App Store badge is Apple’s unmodified [official SVG](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg), used according to its [marketing guidelines](https://developer.apple.com/app-store/marketing/guidelines/). Android retains a Coming soon label until release.

@@ -411,7 +411,7 @@ h3 {
   padding-block: 40px;
   margin-bottom: 40px;
 }
-.closing img {
+.closing > img {
   border-radius: 16px;
   flex-shrink: 0;
 }
@@ -424,6 +424,25 @@ h3 {
   line-height: 1.7;
   color: var(--muted);
   max-width: 650px;
+}
+.app-store-badge {
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.app-store-badge img {
+  display: block;
+  width: auto;
+  height: 60px;
+}
+.hero-download {
+  display: table;
+  margin-top: 24px;
+}
+.store-download {
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 .store-status {
   display: grid;
@@ -616,7 +635,7 @@ footer small {
   .closing {
     display: block;
   }
-  .closing img {
+  .closing > img {
     margin-bottom: 20px;
     width: 56px;
     height: 56px;
